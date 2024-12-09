@@ -3,8 +3,7 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System.Text;
 
-Console.WriteLine("Hello, RabbitMQ!");
-
+Console.WriteLine("Hello, RabbitMQ!（Worker/Consumer）");
 
 var factory = new ConnectionFactory { HostName = "localhost" };
 var connection = await factory.CreateConnectionAsync();
